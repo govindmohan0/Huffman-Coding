@@ -40,35 +40,24 @@ Suppose you have a text file named `input.txt` containing the text "hello world"
 4. The content of `input_decompressed.txt` will be "hello world".
 
 ## Flowchart
-```mermaid
-graph TD;
-    A[Input Text File] --> B{Compression};
-    B --> C[Calculate Character Frequencies];
-    C --> D[Build Huffman Tree];
-    D --> E[Generate Huffman Codes];
-    E --> F[Encode Text];
-    F --> G[Pad Encoded Text];
-    G --> H[Convert to Byte Array];
-    H --> I[Write to Binary File];
-    I --> J[Compressed Binary File];
-    B --> K{Decompression};
-    K --> L[Read Compressed Binary File];
-    L --> M[Convert to Bit String];
-    M --> N[Remove Padding];
-    N --> O[Decode using Huffman Tree];
-    O --> P[Write Decompressed Text];
-    P --> Q[Decompressed Text File];
+
+   1. --> {Compression};
+   2. --> [Calculate Character Frequencies];
+   3. --> [Build Huffman Tree];
+   4. --> [Generate Huffman Codes];
+   5. --> [Encode Text];
+   6. --> [Pad Encoded Text];
+   7. --> [Convert to Byte Array];
+   8. --> [Write to Binary File];
+   9. --> [Compressed Binary File];
+   10. --> {Decompression};
+   11. --> [Read Compressed Binary File];
+   12. --> [Convert to Bit String];
+   13. --> [Remove Padding];
+   14. --> [Decode using Huffman Tree];
+   15. --> [Write Decompressed Text];
+   16. --> [Decompressed Text File];
 
 
 
 
-
-#Steps for compression:
-
- 1.To access the file and excract text from chat file.<br/>
- 2.Calculate frequency of each text and store it in freq.<br/>
- 3.Min heap for two minimum frquency.<br/>
- Construc binary tree from Heap .<br/>
- 4.Construct code from binary tree and stored it in dictionary<br/>
- 5.Construct encoded text.<br/>
- 6.We have to return that binary file as an output.<br/>
