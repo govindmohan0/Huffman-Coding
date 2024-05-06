@@ -57,7 +57,3 @@ Suppose you have a text file named `input.txt` containing the text "hello world"
    14. --> [Decode using Huffman Tree];
    15. --> [Write Decompressed Text];
    16. --> [Decompressed Text File];
-
-
-
-asdfsfdaf
