@@ -26,7 +26,7 @@ This program demonstrates file compression and decompression using Huffman codin
 5. Writes the decoded text into an output text file.
 
 ## Usage
-1. Compile the `Huffmancoding.ipynb` file using a C++ compiler.
+1. Compile the `Huffmancoding.ipynb` file using a Jupyter Notebook.
 2. Run the compiled executable.
 3. Enter the path of the text file you want to compress.
 4. The program will generate a compressed binary file with extension `.bin`.
